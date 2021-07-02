@@ -1,0 +1,347 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: auto;
+	font-size: 50.5%; /* sama dengan 10px*/
+	font-family: 'Source Sans Pro' ,sans-serif;
+	scroll-behavior: smooth;
+	position: center;
+
+}
+
+nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color:#000000; /*Merubah warna menu*/
+	box-shadow: 3px 3px 10px #545454;
+	min-height: 67px;
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+}
+
+.logo img {
+	width: 70px;
+
+}
+
+.nav-links {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 60%
+}
+.nav-links a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 16px;
+	letter-spacing: 0.5px;
+}
+
+
+div#captioned-gallery{
+	width:100%;
+	overflow: hidden;
+}
+
+figure.slider {
+	position: relative;
+	width:500%;
+	font-size:1em;
+	animation: 10s slidy infinite;
+}
+
+figure.slider figure{
+	width:20%;
+	height:auto;
+	display: inline-block;
+
+}
+figure.slider img{
+	width:100%;
+	height:auto;
+}
+
+figure.slider figure figcaption{
+	position: absolute;
+	bottom:0;
+	font-size: 2em;
+	background: rgba(0,0,0,0.4);
+	color:#fff;
+	width:100%;
+	padding:0.6em;
+}
+
+@keyframes slidy{
+	0% {left: 0%}
+	30%{left:0%;}
+	45%{left: -100%;}
+	50%{left:-100%;}
+	65%{left: -200%;}
+	80%{left: -200%;}
+	100%{left: -200%;}
+
+}
+
+
+header .text{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+}
+
+header .text h1{
+	color: #a68223;
+	font-size: 3em;
+	font-weight: bold;
+	background-color: red;
+	width: 50%;
+}
+
+header .text h2{
+	color: #ff6c6c;
+	font-size: 2em;
+}
+
+header .text h3{
+	color: #ff6c6c;
+	font-size: 1em;
+}
+
+header .text h3 span{
+	color: #a68223;
+	font-style: italic;
+}
+
+
+.container{
+	width: 100%;
+	height: auto;
+}
+
+.box{
+	padding: 50px;
+	background-color: #000000;
+	margin-bottom: 0px;
+}
+
+	
+#About{
+	background-color: #fff;
+	text-align: center;	
+}
+
+#About .text-About{
+	color: rgb(141, 215, 250);
+	font-size: 5em;
+	font-weight: bold;
+	text-shadow: 6px 7px 1px rgb(202, 229, 255);
+	text-align: center;
+	margin-bottom: 20px;
+	border-bottom: 1px solid
+}
+
+#About p{
+	font-size: 3em;
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+#About .foto-saya{
+	width: 150px;
+	height: 150px;
+	border-radius: 100%;
+	margin-bottom: 10px;
+}
+
+.button{
+	background-color: #000;
+	padding: 2px 5px;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 4px;
+	transition-duration: 0.6s;
+}
+
+.button:hover{
+	background-color: #C16644;
+
+}
+
+.flex-Urbain{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 100%;
+	margin: auto;
+}
+
+.flex-Product{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 100%;
+	margin: 0 auto;
+	background-color: #fff;
+}
+
+.flex-Product div{
+	margin: 0 auto;
+	flex-basis: 300px;
+	flex-grow: 1
+	background-color: #808080;
+}
+
+.flex-Product img{
+	object-fit: cover;
+	object-position: center;
+	width: 100%;
+	height: 100%;
+	transition: transform 300% ease-out;
+	background-color: #000080;
+}
+
+.flex-Product
+img:hover{
+	transform: scale(1.1);
+}
+
+.text-Product{
+	text-align: center;
+	font-size: 7em;
+}
+
+.gallery{
+	border: 1px solid #ca502b;
+	background: #ca502b;
+	transition: transform 300ms ease-out;
+}
+
+.gallery:hover{
+	box-shadow: 1px 1px 5px #adadad;
+	transform: scale(1.1);
+}
+
+.desc{
+	padding: 5px;
+	text-align: center;
+	color: #fff;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+.text-Order{
+	text-align:center;
+	font-size:3em;
+}
+
+#Contact{
+	background-color: #FFA43C;
+}
+
+#Contact h2{
+	color: #00FFFF;
+	font-size: 6em;	
+	text-shadow: 4px 2px 1px #FF0000;
+	margin-top: -56px;
+	margin-bottom: 10px;
+	text-align:center;
+
+}
+
+#Contact h4{
+	font-size: 5em;
+	color: #fff;
+	margin-top: -11px;
+	margin-bottom: 14px;
+	text-align:center;
+}
+td{
+	color: #fff;
+	padding: 10px;
+	font-size:2em;
+}
+
+input[type=text], select, textarea{
+	width: 100%;
+	height: 50px;
+	padding: 12px;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+
+}
+
+input[type=submit] :hover {
+	background-color: #fff;
+
+}
+
+input[type=submit] {
+	background-color: #00FF00
+	color: white;
+	padding: 12px 20px;
+	border:none;
+	border-radius: 19px;
+	cursor: pointer;
+
+}
+
+.flex-contact{
+	padding: 30px;
+	align-items: center;
+}
+
+.flex-contact1{
+	flex-grow: 2;
+}
+
+.flex-contact2{
+	flex-grow: 1;
+	text-align:-webkit-center;	
+}
+
+#Location {
+	text-align: center;
+}
+
+#Location h2{
+	color: #00FFFF;
+	font-size: 6em;	
+	text-shadow: 4px 2px 1px #FF0000;
+	margin-top: -56px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+#Location h3{
+	font-size: 3em;
+	color: #ffff;
+	margin-top: -11px;
+	margin-bottom: 14px;
+	text-align: center
+}
+#footer p {
+	margin: 4rem 0 2rem;
+	color: #0000;
+	font-size: 0.8rem;
+	text-align: center;
+	font-weight: 600;
+
+
+
